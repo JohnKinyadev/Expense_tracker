@@ -1,0 +1,12 @@
+body{
+font-family: Arial, sans-serif;
+}
+
+li{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#f3f3f3;
+padding:10px;
+border-radius:5px;
+}

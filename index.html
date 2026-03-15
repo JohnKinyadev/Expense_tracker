@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expense Tracker</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-100 p-10">
+
+<div class="max-w-2xl mx-auto bg-white p-6 rounded shadow">
+
+<h1 class="text-2xl font-bold mb-4 text-center">Expense Tracker</h1>
+
+<div class="grid grid-cols-1 gap-3">
+
+<input id="description" class="border p-2 rounded" placeholder="Expense description">
+
+<input id="amount" type="number" class="border p-2 rounded" placeholder="Amount">
+
+<select id="category" class="border p-2 rounded">
+<option value="food">Food</option>
+<option value="transport">Transport</option>
+<option value="shopping">Shopping</option>
+<option value="bills">Bills</option>
+</select>
+
+<button id="addBtn" class="bg-blue-500 text-white p-2 rounded">
+Add Expense
+</button>
+
+</div>
+
+<div class="mt-4">
+
+<select id="filter" class="border p-2 rounded">
+<option value="all">All</option>
+<option value="food">Food</option>
+<option value="transport">Transport</option>
+<option value="shopping">Shopping</option>
+<option value="bills">Bills</option>
+</select>
+
+</div>
+
+<ul id="expenseList" class="mt-4 space-y-2"></ul>
+
+<h2 class="mt-4 text-lg font-semibold">
+Total: Ksh <span id="total">0</span>
+</h2>
+
+</div>
+
+<script src="tracker.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
